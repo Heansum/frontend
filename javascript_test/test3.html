@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    async function login(){
+        let loginDto = {
+        username: "ssar",
+        password: "1234"
+      };
+    
+      let r1 = await fetch("http://192.168.3.101:8000/post");
+      let r2 = await r1.text();
+
+      console.log(r2);
+      
+    }
+
+    login();
+
+    console.log(" 나무 그리기 ");
+    console.log(" 태양 그리기 ");
+    console.log(" 바다 그리기 ");
+
+  </script>
+</body>
+
+</html>
